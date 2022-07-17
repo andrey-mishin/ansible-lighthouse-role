@@ -1,0 +1,8 @@
+---
+- name: Install GIT
+  become: true
+  ansible.builtin.yum:
+    name: git
+    state: present
+  tags:
+    - git-inst
